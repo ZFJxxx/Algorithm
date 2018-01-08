@@ -11,7 +11,6 @@ Given numbers = [2, 7, 11, 15], target = 9,
 Because numbers[0] + numbers[1] = 2 + 7 = 9,
 return [0, 1].
  */
-
 class TwoSum {
     /*
     1.利用HashMap只能存储不能重复对象的原理，新建一个HashMap，从第一个开始循环，HashMap里面放 键为target-每个数的结果 值为下标.
