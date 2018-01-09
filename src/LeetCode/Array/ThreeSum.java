@@ -27,12 +27,10 @@ class ThreeSum {
 
     public List<List<Integer>> threeSum(int[] num) {
         Arrays.sort(num);
-
         for (int i = 0; i < num.length-2; i++) {
             if (i > 0 && num[i] == num[i-1]) continue;
             find(num, i+1, num.length-1, num[i]); //寻找两个数与num[i]的和为0
         }
-
         return result;
     }
 
